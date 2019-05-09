@@ -20,4 +20,8 @@ public class Probability {
     public double getValue() {
         return this.value;
     }
+
+    public double and(Probability anotherProbability) {
+        return this.getValue()*anotherProbability.getValue();
+    }
 }
