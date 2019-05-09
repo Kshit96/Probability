@@ -4,8 +4,8 @@ public class Probability {
         this.value=value;
     }
 
-    public static boolean compare(Probability eventA, Probability eventB){
-        if(eventA.getValue()==eventB.getValue()){
+    public boolean compare(Probability otherProbability){
+        if(otherProbability.getValue()==this.getValue()){
             return true;
         }
         return false;
